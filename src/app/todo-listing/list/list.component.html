@@ -1,3 +1,8 @@
-<p>
-  list works!
-</p>
+<ul>
+    <li *ngFor="let post of responseData">
+        <p>{{post.userId}}</p>
+        <p>{{post.id}}</p>
+        <p>{{post.title}}</p>
+        <p>{{post.body}}</p>
+    </li>
+</ul>
