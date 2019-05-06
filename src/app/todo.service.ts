@@ -13,6 +13,8 @@ export class TodoService {
 
   getTodoList() {
     return this.Http.get(this._url);
-
+  }
+  getItem(postID) {
+    return this.Http.get(this._url + '/' + postID);
   }
 }

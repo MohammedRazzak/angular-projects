@@ -1,3 +1,6 @@
-<p>
-  item-details works!
-</p>
+<div *ngIf="responseData">
+    <p>{{responseData.userId}}</p>
+    <p>{{responseData.id}}</p>
+    <p>{{responseData.title}}</p>
+    <p>{{responseData.body}}</p>
+</div>
