@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-add-todo',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddTodoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+  }
+  registrationForm = this.fb.group({
+    username: ['Ahmed kamal'],
+    password: [''],
+    confirmpassword: ['']
+  });
+  // registrationForm = new FormGroup({
+  //   username: new FormControl('razak'),
+  //   password: new FormControl(''),
+  //   confirmpassword: new FormControl('')
+  // });
+
+  loadData() {
+    this.registrationForm.setValue({
+      username: 'mohamed Razak',
+      password: '12345',
+      confirmpassword: '12345',
+    });
   }
 
 }

@@ -1,0 +1,22 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 30px;
+    input {
+        border: 1px solid #ddd;
+        background: #fff;
+        height: 30px;
+        width: 200px;
+        padding: 0px 10px;
+        border-radius: 4px;
+    }
+    button {
+        background: #2cdf76;
+        height: 30px;
+        width: 150px;
+        padding: 0px 10px;
+        border-radius: 4px;
+        margin-right: 30px;
+    }
+}

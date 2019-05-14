@@ -4,6 +4,8 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
 import { ListComponent } from './list/list.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { Routes, RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -17,7 +19,8 @@ const routes: Routes = [
   declarations: [AddTodoComponent, ListComponent, ItemDetailsComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ReactiveFormsModule
   ]
 })
 export class TodoListingModule { }

@@ -1,3 +1,21 @@
-<p>
-  add-todo works!
-</p>
+<h2>add item</h2>
+<form action="" [formGroup]="registrationForm">
+    <div class="item">
+        <label for="">user name </label>
+        <input formControlName="username" type="text">
+    </div>
+    <div class="item">
+        <label for="">password</label>
+        <input formControlName="password" type="password">
+    </div>
+    <div class="item">
+        <label for="">confirm password</label>
+        <input formControlName="confirmpassword" type="password">
+    </div>
+    <div class="item">
+        <button>Register</button>
+        <button (click)="loadData()">Load API Data</button>
+    </div>
+</form>
+
+{{registrationForm.value | json}}
